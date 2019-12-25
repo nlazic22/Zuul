@@ -39,7 +39,7 @@ pipeline {
             steps{
                 script{
                     sh '''
-                            docker run -d --name zuul -p 8761:8761 zuul:latest
+                            docker run -d --name zuul -p 9001:9001 zuul:latest
                         '''
                 }
             }
