@@ -1,6 +1,6 @@
 FROM maven:3.6-jdk-11 as builder
 WORKDIR /app
-COPY ./zuul /app/
+COPY ./ /app/
 RUN mvn clean install
 
 FROM openjdk:8
